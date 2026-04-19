@@ -511,10 +511,10 @@ REPOSITORY_LOCATIONS_SPEC = dict(
     v8 = dict(
         # NOTE: Update together with proxy_wasm_cpp_host, highway, fast_float, dragonbox, simdutf, and fp16.
         # Patch contains workaround for https://github.com/bazelbuild/rules_python/issues/1221
-        version = "14.6.202.10",
+        version = "14.9.141",
         # Follow this guide to pick next stable release: https://v8.dev/docs/version-numbers#which-v8-version-should-i-use%3F
         strip_prefix = "v8-{version}",
-        sha256 = "09c3d9f796a671fb9630c7190032f00171ce99effd7c80c7aaeba148a7bcbc1b",
+        sha256 = "9354f8a3b21b216d080cece1a5b8d93bd40436de6ef1b78b55fcce7c656a89a9",
         urls = ["https://github.com/v8/v8/archive/refs/tags/{version}.tar.gz"],
     ),
     fast_float = dict(
@@ -527,16 +527,16 @@ REPOSITORY_LOCATIONS_SPEC = dict(
     ),
     highway = dict(
         # NOTE: Update together with v8 and proxy_wasm_cpp_host.
-        version = "1.2.0",
+        version = "1.3.0",
         strip_prefix = "highway-{version}",
-        sha256 = "7e0be78b8318e8bdbf6fa545d2ecb4c90f947df03f7aadc42c1967f019e63343",
+        sha256 = "07b3c1ba2c1096878a85a31a5b9b3757427af963b1141ca904db2f9f4afe0bc2",
         urls = ["https://github.com/google/highway/archive/refs/tags/{version}.tar.gz"],
     ),
     dragonbox = dict(
         # NOTE: Update together with v8 and proxy_wasm_cpp_host.
-        version = "6c7c925b571d54486b9ffae8d9d18a822801cbda",
+        version = "beeeef91cf6fef89a4d4ba5e95d47ca64ccb3a44",
         strip_prefix = "dragonbox-{version}",
-        sha256 = "2f10448d665355b41f599e869ac78803f82f13b070ce7ef5ae7b5cceb8a178f3",
+        sha256 = "ae5472a5af081b841ffd02319563bd154574336e39212ad8c3986fbf074dad87",
         urls = ["https://github.com/jk-jeon/dragonbox/archive/{version}.zip"],
     ),
     fp16 = dict(
@@ -548,8 +548,8 @@ REPOSITORY_LOCATIONS_SPEC = dict(
     ),
     simdutf = dict(
         # NOTE: Update together with v8 and proxy_wasm_cpp_host.
-        version = "8.1.0",
-        sha256 = "c3565a8567b21d0096d0366654db473597ea6e5408e464198dce0897be71e4d0",
+        version = "8.2.0",
+        sha256 = "dce5756f20c03202ad48de43ff306629f7e0dd2bed204dfa2967ea13fcab296e",
         urls = ["https://github.com/simdutf/simdutf/releases/download/v{version}/singleheader.zip"],
     ),
     quiche = dict(
